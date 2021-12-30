@@ -1,0 +1,22 @@
+{
+  "name": "@cfnboost/template",
+  "type": "module",
+  "author": "Gordon Leigh",
+  "private": "false",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "index": "node ../../makeIndex.mjs"
+  },
+  "files": [
+    "*.ts",
+    "lib/"
+  ],
+  "dependencies": {
+    "@cfnboost/resources": "^0.36.4"
+  }
+}
