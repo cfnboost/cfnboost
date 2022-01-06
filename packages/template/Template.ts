@@ -1,6 +1,7 @@
 import { IntrinsicValue } from './Fn.js';
 import { OutputDefinition } from './OutputDefinition.js';
 import { ParameterDefinition } from './ParameterDefinition.js';
+import { ResourceDefinition } from './ResourceDefinition.js';
 import { RuleDefinition } from './RuleDefinition.js';
 import { TemplateMap } from './TemplateMap';
 
@@ -99,6 +100,15 @@ export interface Template {
    * @see https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
    */
   Parameters?: TemplateMap<ParameterDefinition>;
+
+  /**
+   * The required `Resources` section declares the AWS resources that you want
+   * to include in the stack, such as an Amazon EC2 instance or an Amazon S3
+   * bucket.
+   *
+   * @see https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+   */
+  Resources: TemplateMap<ResourceDefinition>;
 
   /**
    * The optional `Rules` section validates a parameter or a combination of

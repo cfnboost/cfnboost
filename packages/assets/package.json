@@ -1,5 +1,5 @@
 {
-  "name": "@cfnboost/template",
+  "name": "@cfnboost/assets",
   "version": "0.1.0",
   "type": "module",
   "author": "Gordon Leigh",
@@ -21,6 +21,12 @@
     "lib/"
   ],
   "dependencies": {
-    "@cfnboost/resources": "^0.36.4"
+    "@aws-sdk/client-s3": "^3.45.0",
+    "@aws-sdk/lib-storage": "^3.45.0",
+    "@cfnboost/template": "^0.1.0",
+    "@supercharge/promise-pool": "^2.1.0",
+    "tempy": "^2.0.0",
+    "tiny-typed-emitter": "^2.1.0",
+    "uuid": "^8.3.2"
   }
 }
