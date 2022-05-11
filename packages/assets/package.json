@@ -7,8 +7,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./lib/index.js",
-  "module": "./lib/index.js",
   "typedocMain": "./index.ts",
   "exports": {
     ".": "./lib/index.js"
@@ -24,7 +22,13 @@
     "@aws-sdk/client-s3": "^3.45.0",
     "@aws-sdk/lib-storage": "^3.45.0",
     "@cfnboost/template": "^0.1.0",
+    "@fmtk/decoders": "^0.5.2",
     "@supercharge/promise-pool": "^2.1.0",
+    "archiver": "^5.3.0",
+    "commander": "^9.0.0",
+    "ignore": "^5.2.0",
+    "lodash.merge": "^4.6.2",
+    "rollup": "^2.63.0",
     "tempy": "^2.0.0",
     "tiny-typed-emitter": "^2.1.0",
     "uuid": "^8.3.2"
